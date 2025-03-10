@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+    <main>
+        <nav>
+        <div class="navbar">
+            <div class="logo">
+                <a href="#"><img src="./Images/logo.png" alt="Logo"></a>
+            </div>
+            <div class="navLinks">
+                <ul class="navList" id="menuList">
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">PAGES</a></li>
+                    <li><a href="">SERVICES</a></li>
+                    <li><a href="">NEWS</a></li>
+                    <li><a href="">SHOP</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </div>
+            <div class="navTools">
+                <ul>
+                    <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-phone"></i></a></li>
+                    <li><p>Call Anytime <span>+91 1234567890</span></p></li>
+                </ul>
+            </div>
+            <div class="menu_icon">
+                <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+            </div>
+        </div>
+       </nav>
+       <section class="banner">
+        <div class="bannerContent">
+            <p class="bannerSub">Save time and fly with comfort</p>
+            <h1>LUXURY JET FLIGHTS</h1>
+            <div class="bannerBtn">
+                <a href="#" id="btn1">BOOK NOW</a>
+                <a href="#" id="btn2">READ MORE</a>
+            </div>
+            <div class="featureImage" data-aos="fade-up"
+            data-aos-duration="2000">
+                <img src="./Images/banner_feature.png" alt="Aeroplane">
+            </div>
+        </div>
+       </section>
+       <section class="bannerSecond">
+             <div class="luxuryDiv container">
+                <div class="luxuryCard">
+                    <img src="./Images/gold_diamond.png" alt="Image">
+                    <p>LUXURY AND COMFORT</p>
+                </div>
+                <div class="luxuryCard">
+                    <img src="./Images/gold_diamond.png" alt="Image">
+                    <p>LUXURY AND COMFORT</p>
+                </div>
+                <div class="luxuryCard">
+                    <img src="./Images/gold_diamond.png" alt="Image">
+                    <p>LUXURY AND COMFORT</p>
+                </div>
+                <div class="luxuryCard">
+                    <img src="./Images/gold_diamond.png" alt="Image">
+                    <p>LUXURY AND COMFORT</p>
+                </div>
+             </div>
+       </section>
+       <!-- ---------ABOUT SECTION--------------------- -->
+        <section class="about common_padding">
+            <div class="aboutDiv container">
+                <div class="aboutText">
+                    <p class="aboutSub">GET TO KNOW US</p>
+                    <h2>Our jetly save your time <span>and give you comfort in</span> <span>flights</span></h2>
+                    <p class="aboutPara">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti odio eius culpa voluptatem dolor tempora aspernatur. Sit quo nulla ullam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, alias.</p>
+                    <p class="aboutp3"><i class="fa-solid fa-check"></i> Lorem ipsum dolor sit amet consectetur.</p>
+                    <p class="aboutp3"><i class="fa-solid fa-check"></i> Lorem ipsum dolor sit amet consectetur.</p>
+                    <div class="aboutInfo">
+                        <a href="" class="btn" id="about_btn">Discover More</a>
+                    <div class="aboutCall">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>Call <span>+91 1234567890</span></p>
+                    </div>
+                    </div>
+                </div>
+                <figure class="aboutImage">
+                    <img src="./Images/about_image.png" alt="Image">
+                </figure>
+            </div>
+        </section>
+        <section class="cards">
+            <div class="cardDiv container">
+                <div class="card1 card" data-aos="flip-right" data-aos-duration="3000">
+                    <p id="cardp1">COLLECT MILES</p>
+                    <p id="cardHead">Get discount next flights with our card</p>
+                    <p id="cardPara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias asperiores amet vel distinctio non ducimus aliquam, quos officia.</p>
+                    <a href="#" id="card_btn">DISCOVER MORE</a>
+                </div>
+                <div class="card2 card" data-aos="flip-right" data-aos-duration="3000">
+                    <p>Exclusive <span>new offers</span></p>
+                </div>
+                <div class="card3 card" data-aos="flip-right" data-aos-duration="3000">
+                    <p>Join our <span>cabin crew</span></p>
+                </div>
+            </div>
+        </section>
+        <section class="privateFlight common_padding">
+            <div class="privateFlightDiv">
+                <div class="privateFlightContent container">
+                  <p class="flightSub">GET YOUR FLIGHT</p>
+                  <h2>Request for private flight</h2>
+                  <form action="#">
+                    <input type="text" name="fly_from" id="fly_from" placeholder="Fly from">
+                    <input type="text" name="fly_to" id="fly_to" placeholder="Fly to">
+                    <input type="date" name="date" id="date" placeholder="Select date">
+                    <input type="date" name="date2" id="date2" placeholder="Select date" class="small_input">
+                    <input type="number" name="passengers" id="passengers" placeholder="Passengers" class="small_input">
+                    <select name="baggage" id="baggage">
+                        <option>Select Baggage</option>
+                        <option value="01">Briefcase</option>
+                        <option value="02">Suitcase</option>
+                    </select>
+                    <input type="submit" value="BOOK NOW">
+                  </form>
+                  <p class="flightEnd">After sending request, we will contact you for more details on charter</p>
+                </div>
+            </div>
+        </section>
+        <!-- --------SERVICES SECTION-- -->
+        <section class="services">
+            <div class="serviceDiv container">
+                <p id="serviceDivSub">WHAT WE'RE OFFERING</p>
+                <h2>Select the service according to your work</h2>
+                <div class="serviceCardDiv" data-aos="flip-down" data-aos-duration="3000">
+                    <div class="serviceCard">
+                        <img src="./Images/service1.png" alt="Image">
+                        <div class="serviceText">
+                            <p class="serviceSub">FLIGHT FOR</p>
+                            <h4>Business Charter</h4>
+                            <p class="servicePara">Lorem ipsum dolor sit amet consectetur. Lorem, ipsum dolor.</p>
+                            <a href="#" class="service_select"><i class="fa-solid fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="serviceCard">
+                        <img src="./Images/service2.png" alt="Image">
+                        <div class="serviceText">
+                            <p class="serviceSub">FLIGHT FOR</p>
+                            <h4>Private Charter</h4>
+                            <p class="servicePara">Lorem ipsum dolor sit amet consectetur. Lorem, ipsum dolor.</p>
+                            <a href="#" class="service_select"><i class="fa-solid fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="serviceCard">
+                        <img src="./Images/service3.png" alt="Image">
+                        <div class="serviceText">
+                            <p class="serviceSub">FLIGHT FOR</p>
+                            <h4>Jet Rentals</h4>
+                            <p class="servicePara">Lorem ipsum dolor sit amet consectetur. Lorem, ipsum dolor.</p>
+                            <a href="#" class="service_select"><i class="fa-solid fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="serviceCard">
+                        <img src="./Images/service4.png" alt="Image">
+                        <div class="serviceText">
+                            <p class="serviceSub">FLIGHT FOR</p>
+                            <h4>High Profile People</h4>
+                            <p class="servicePara">Lorem ipsum dolor sit amet consectetur. Lorem, ipsum dolor.</p>
+                            <a href="#" class="service_select"><i class="fa-solid fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="block common_padding">
+            <div class="blockDiv"></div>
+        </section>
+        <section class="feedback">
+            <div class="feedbackDiv container">
+                <p id="feedbackSub">CUSTOMERS FEEDBACK</p>
+                <h2>What they're talking about our flight services</h2>
+                <div class="reviewsDiv">
+                    <div class="reviewCard" data-aos="fade-right" data-aos-duration="3000">
+                        <img src="./Images/reviewPic.png" alt="Image">
+                        <p class="reviwPara">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea ipsam quisquam tempora. Amet laudantium nisi eos totam placeat atque, facere autem sunt illum natus repellendus dolores voluptates neque aut harum!</p>
+                        <p class="reviewName">BONNIE TOLBET <span>CUSTOMER</span></p>
+                    </div>
+                    <div class="reviewCard" data-aos="fade-left" data-aos-duration="3000">
+                        <img src="./Images/reviewPic.png" alt="Image">
+                        <p class="reviwPara">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea ipsam quisquam tempora. Amet laudantium nisi eos totam placeat atque, facere autem sunt illum natus repellendus dolores voluptates neque aut harum!</p>
+                        <p class="reviewName">BONNIE TOLBET <span>CUSTOMER</span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="specialOffer common_padding">
+            <div class="specialOfferDiv container">
+                 <div class="spText">
+                    <p class="spSub">SPECIAL OFFER</p>
+                    <h2>The best service for business people who appreciate time</h2>
+                    <p class="spPara">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae temporibus quas similique eum. Magni, repellendus!</p>
+                    <a href="#" id="offer_btn">Discover More</a>
+                 </div>
+                 <figure class="spImage">
+                    <img src="./Images/special offer.png" alt="Image">
+                 </figure>
+            </div>
+        </section>
+        <section class="flight_timings common_padding">
+            <div class="flight_timings_Div container">
+                <div class="flight_timing_text">
+                    <p class="timing_sub">PRIVATE FLIGHTS</p>
+                    <h2>Browse legs <span>of our charters</span></h2>
+                    <p class="timing_para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur temporibus laborum ratione recusandae eligendi provident asperiores culpa numquam tempora esse?</p>
+                    <div class="timing_selectors">
+                        <a href=""><i class="fa-solid fa-arrow-left"></i></a>
+                        <a href=""><i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="flight_timing_pic">
+                    <div class="pic_head">
+                        <p>Departure</p>
+                        <i class="fa-solid fa-plane"></i>
+                        <p>Arrival</p>
+                    </div>
+                        <div class="pic_body">
+                            <img src="./Images/aeroplane_image.png" alt="Aeroplane">
+                        <p>Date: <span>Thursday, Feb 12, 2023</span></p>
+                        <p>Departure: <span>11.25pm</span></p>
+                        <p>Arrival: <span>02.15 am</span></p>
+                        <p>Starting from: $2555</p>
+                        <p>Person: <span>Adult 3</span></p>
+                        <a href="" class="timing_btn">BOOK NOW</a>
+                        </div>
+                </div>
+                <div class="flight_timing_pic">
+                    <div class="pic_head">
+                        <p>Departure</p>
+                        <i class="fa-solid fa-plane"></i>
+                        <p>Arrival</p>
+                    </div>
+                        <div class="pic_body">
+                            <img src="./Images/aeroplane_image.png" alt="Aeroplane">
+                        <p>Date: <span>Thursday, Feb 12, 2023</span></p>
+                        <p>Departure: <span>11.25pm</span></p>
+                        <p>Arrival: <span>02.15 am</span></p>
+                        <p>Starting from: $2555</p>
+                        <p>Person: <span>Adult 3</span></p>
+                        <a href="" class="timing_btn">BOOK NOW</a>
+                        </div>
+                </div>
+            </div>
+        </section>
+        <section class="destinations common_padding">
+            <section class="destination_div container">
+                <p class="destination_sub">WHAT WILL YOU GET</p>
+                    <h2>Checkout the popular jet <span>charter destinations</span></h2>
+                    <div class="destinations_card_div">
+                        <div class="destination_card">
+                            <img src="./Images/destination-1-1.png" alt="">
+                            <div class="destination_name">
+                                <p>Paris-Barcelona</p>
+                                <div class="destin_time">
+                                    <span>Departure: 16:50</span>
+                                    <span>Arrival: 20:42</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="destination_card">
+                            <img src="./Images/destination-1-2.png" alt="">
+                            <div class="destination_name">
+                                <p>Paris-Barcelona</p>
+                                <div class="destin_time">
+                                    <span>Departure: 16:50</span>
+                                    <span>Arrival: 20:42</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="destination_card">
+                            <img src="./Images/destination-1-3.png" alt="">
+                            <div class="destination_name">
+                                <p>Paris-Barcelona</p>
+                                <div class="destin_time">
+                                    <span>Departure: 16:50</span>
+                                    <span>Arrival: 20:42</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+        </section>
+        <!-- ---------NEWS ARTICLES SECTION----------- -->
+         <section class="news_articles common_padding">
+            <div class="news_articles_div container">
+                <p class="newsart_sub">FROM THE BLOG POSTS</p>
+                <h2>Checkout latest aviation <span>news and articles</span></h2>
+                <div class="news_card_div">
+                    <div class="news_card">
+                        <img src="./Images/news1.png" alt="Image">
+                        <div class="news_card_text">
+                            <div class="feb24">24 Feb</div>
+                            <p class="card_comments"><i class="fa-solid fa-circle-user"></i> Jetly <span><i class="fa-solid fa-comment"></i> 2 comments</span></p>
+                            <p class="card_precaution">Flight's precautionary <span>landing in dubai of</span> <span>lorem ipsum</span></p>
+                            <a href="" class="read_more">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="news_card">
+                        <img src="./Images/news2.png" alt="Image">
+                        <div class="news_card_text">
+                            <div class="feb24">24 Feb</div>
+                            <p class="card_comments"><i class="fa-solid fa-circle-user"></i> Jetly <span><i class="fa-solid fa-comment"></i> 2 comments</span></p>
+                            <p class="card_precaution">Flight's precautionary <span>landing in dubai of</span> <span>lorem ipsum</span></p>
+                            <a href="" class="read_more">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="news_card">
+                        <img src="./Images/news3.png" alt="Image">
+                        <div class="news_card_text">
+                            <div class="feb24">24 Feb</div>
+                            <p class="card_comments"><i class="fa-solid fa-circle-user"></i> Jetly <span><i class="fa-solid fa-comment"></i> 2 comments</span></p>
+                            <p class="card_precaution">Flight's precautionary <span>landing in dubai of</span> <span>lorem ipsum</span></p>
+                            <a href="" class="read_more">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </section>
+         <section class="subscribe common_padding">
+            <div class="subscribe_div container">
+                 <div class="subscribe_text">
+                    <p class="subscribe_sub">SUBSCRIBE NOW</p>
+                    <h2>Want to know about <span>our offers first ?</span></h2>
+                 </div>
+                 <div class="subscribe_form">
+                    <form action="#">
+                        <input type="email" name="email" id="email" placeholder="Enter Email Address">
+                        <p class="error mailErr"></p>
+                        <input type="checkbox" id="privacy_policy" name="privacy_policy"><label for="privacy_policy">I've read and accept the privacy policy</label>
+                        <input type="submit" value="SUBSCRIBE">
+                    </form>
+                 </div>
+            </div>
+         </section>
+    </main>
+    <footer class="">
+        <div class="footerDiv container common_padding">
+            <div class="foot1 foot_part">
+                 <img src="./Images/logo.png" alt="Logo" class="footer_logo">
+                 <p>Private jet charters save your time and <span>give you comfort</span></p>
+                </div>
+            <div class="foot2 foot_part">
+                <p class="footer_head">Explore</p>
+                <ul>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Private jet Catering</a></li>
+                    <li><a href="">Destinations</a></li>
+                    <li><a href="">Flight Search</a></li>
+                    <li><a href="">Book Flight</a></li>
+                </ul>
+            </div>
+            <div class="foot3 foot_part">
+                <p class="footer_head">Links</p>
+                <ul>
+                    <li><a href="">Terms and News</a></li>
+                    <li><a href="">Contact Us</a></li>
+                    <li><a href="">News and Press</a></li>
+                    <li><a href="">Faqs</a></li>
+                </ul>
+            </div>
+            <div class="foot4 foot_part">
+                <p class="footer_head">Contact</p>
+                <ul>
+                    <li><i class="fa-solid fa-phone"></i> +91 1234567890</li>
+                    <li><i class="fa-solid fa-envelope"></i> needhelp@company.com</li>
+                    <li><i class="fa-solid fa-location-dot"></i> 30 brooklyn golden street</li>
+                </ul>               
+            </div>
+        </div>
+        <div class="copyright_div">
+            <p>©Copyright 2023 by jetly.com</p>
+        </div>
+    </footer>
+    <!-- -------JAVA SCRIPT SECTION--- -->
+    <script src="./Js/index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+</body>
+</html>

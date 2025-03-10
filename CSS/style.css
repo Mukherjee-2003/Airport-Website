@@ -1,0 +1,1702 @@
+@font-face {
+    font-family: Helvetica;
+    src: url("../Font/Helvetica\ Bold\ Condensed.otf");
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body {
+    font-family: Helvetica,serif;
+}
+:root {
+    --jet_yellow : #a79132;
+    --jet-green: #294f38;
+}
+.container {
+    max-width: 1244px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+    /* border: 1px solid red; */
+}
+.common_padding {
+    padding-top: 67px;
+    padding-bottom: 67px;
+}
+/* ----------------NAVBAR CSS--------------- */
+.navbar {
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 2rem;
+    top: 20px;
+}
+.navLinks {
+    width: 60%;
+}
+.navList {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+.navList li a{
+   text-decoration: none;
+   color: #fff;
+   font-size: 17px;
+}
+.navList li a:hover {
+    transform: scale(1.1);
+    color: #000;
+}
+.navTools {
+    width: 20%;
+}
+.navTools ul {
+    height: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navTools ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+}
+.navTools ul li p span{
+   display: block;
+   text-align: center;
+}
+.menu_icon {
+    display: none;
+}
+.menu_icon i{
+ font-size: 30px;
+}
+.logo:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px green;
+}
+/* -----------BANNER CSS------------------------ */
+.banner {
+    height: 100vh;
+    width: 100%;
+    background-image: url("../Images/banner_color_image.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #36563f;
+    background-blend-mode: multiply;
+}
+.bannerContent {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    z-index: 1;
+}
+h1 {
+    font-size: 100px;
+    text-align: center;
+    width: 60%;
+    margin-top: 1.5rem;
+}
+.bannerBtn {
+    display: flex;
+    margin-top: 1rem;
+    width: 480px;
+    justify-content: space-between;
+}
+#btn1,#btn2{
+    display: inline-block;
+    width: 232px;
+    height: 70px;
+    border-radius: 50px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+ #btn1 {
+    background-color: var(--jet_yellow);
+    color: white;
+}
+ #btn2 {
+    background-color: #fff;
+    color: black;
+}
+ #btn1:hover {
+    background-color: #ff9800; 
+    transform: scale(1.1);     
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
+}
+ #btn2:hover {
+    background-color: black;   
+    color: white;              
+    transform: scale(1.1);     
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
+}
+.bannerSub {
+    font-size: 25px;
+}
+.featureImage {
+    position: absolute;
+    bottom: -150px;
+    z-index: 3;
+}
+.featureImage img{
+    max-width: 100%;
+    object-fit: cover;
+}
+.bannerSecond {
+    width: 100%;
+    background-color: var(--jet_yellow);
+    padding-top: 170px;
+    padding-bottom: 50px;
+}
+.luxuryDiv {
+ display: flex;
+ justify-content: center;
+ gap: 2rem;
+ align-items: center;
+ flex-wrap: wrap;
+
+}
+.luxuryCard {
+    max-width: 274px;
+    width: 100%;
+    height: 104px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 25px;
+    padding: 1rem 0;
+}
+.luxuryCard p {
+    margin-top: 1rem;
+}
+/* -------------ABOUT CSS----------------- */
+.aboutDiv {
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid green;
+}
+.aboutText {
+    max-width: 644px;
+    width: 100%;
+    border: 2px solid yellow;
+}
+.aboutSub {
+    font-size: 21px;
+    color: var(--jet_yellow);
+}
+.aboutText h2 {
+    font-size: 50px;
+    color: var(--jet-green);
+    margin-top: 1.5rem;
+}
+.aboutText h2 span {
+    display: block;
+}
+.aboutPara {
+    font-size: 20px;
+    color: #808080;
+    margin-top: 1.6rem;
+    line-height: 2rem;
+}
+.aboutp3 {
+    color: var(--jet-green);
+    font-size: 20px;
+    margin-top: 1rem;
+}
+#about_btn {
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 25px;
+    justify-content: center;
+    width: 326px;
+    height: 95px;
+    border-radius: 25px;
+    background-color: var(--jet-green);
+    color: #fff;
+    transition: all 0.3s ease;
+}
+#about_btn:hover {
+    background-color: green; 
+    transform: scale(1.1);     
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.aboutImage img {
+    max-width: 100%;
+    object-fit: cover;
+}
+.aboutInfo {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2rem;
+}
+.aboutCall {
+    display: flex;
+    justify-content: space-between;
+    width: 25%;
+    text-align: center;
+    border: 2px solid blue;
+}
+.aboutCall span {
+    display: block;
+}
+.aboutCall i{
+    font-size: 40px;
+    color: var(--jet_yellow);
+}
+/* -----------CARDS CSS--------------- */
+.card {
+    max-width: 390px;
+    width: 100%;
+    min-height: 480px;
+    border: 2px solid purple;
+}
+.card1 {
+    background-image: url("../Images/card1.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    padding: 2rem 1rem;
+    min-height: 480px;
+}
+.card2 {
+    background-image: url("../Images/card2.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: 34px;
+    color: #fff;
+    display: flex;
+    align-items: flex-end;
+    padding: 2rem 1rem;
+}
+.card3 {
+    background-image: url("../Images/card3.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: 34px;
+    color: #fff;
+    display: flex;
+    align-items: flex-end;
+    padding: 2rem 1rem;
+}
+.card p span {
+    display: block;
+}
+.cardDiv {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+
+#cardp1 {
+    font-size: 17px;
+}
+#cardHead {
+    font-size: 34px;
+    margin-top: 1rem;
+}
+#cardPara {
+    font-size: 21px;
+    margin-top: 2rem;
+}
+#card_btn {
+    text-decoration: none;
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    width: 279px;
+    height: 59px;
+    background-color: #fff;
+    color: black;
+    margin-top: 2rem;
+}
+#card_btn:hover {
+    background-color: black;   
+    color: white;              
+    transform: scale(1.1);     
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+/* ----------PRIVATE FLIGHT----------------- */
+.privateFlightDiv {
+    width: 100%;
+    /* height: 60vh; */
+    background-image: url("../Images/privateFlight.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+.privateFlightContent {
+    width: 100%;
+    height: 100%;
+    padding: 1.5rem 0;
+}
+.privateFlightDiv h2 {
+    font-size: 50px;
+    color: #fff;
+}
+.privateFlightDiv form input {
+    max-width: 432px;
+    width: 100%;
+    height: 70px;
+    background-color: #0d2b19;
+    color: #fff;
+    padding-left: 1.5rem;
+}
+.privateFlightDiv form select {
+    max-width: 432px;
+    width: 100%;
+    height: 70px;
+    background-color: #0d2b19;
+    color: #fff;
+    padding-left: 1.5rem;
+    overflow: hidden;
+}
+.privateFlightDiv form input[type="submit"] {
+    width: 220px;
+    height: 72px;
+    background-color: var(--jet_yellow);
+    color: #fff;
+    border-radius: 35px;
+    padding-left: 0;
+    transition: all 0.3s ease;
+}
+.privateFlightDiv form input[type="submit"]:hover {
+    background-color: #ff9800; 
+    transform: scale(1.1);     
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.privateFlightDiv form .small_input {
+    max-width: unset;
+    max-width: 186px;
+}
+.privateFlightDiv form {
+    /* border: 2px solid purple; */
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.flightSub {
+    font-size: 20px;
+    color: var(--jet_yellow);
+}
+.flightEnd {
+    color: #fff;
+    font-size: 25px;
+    margin-top: 1rem;
+}
+/* --------------SERVICE CSS--------------------- */
+.serviceCardDiv {
+    margin-top: 2rem;
+    width: 100%;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+.serviceDiv h2 {
+    font-size: 50px;
+    width: 40%;
+    text-align: center;
+    margin: 0 auto;
+}
+#serviceDivSub {
+    color: var(--jet_yellow);
+    font-size: 21px;
+    text-align: center;
+}
+.serviceCard {
+    /* border: 2px solid purple; */
+    max-width: 290px;
+    width: 100%;
+}
+.serviceCard:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px green;
+}
+.serviceCard img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+.serviceText {
+    border: 1px solid gray;
+    width: 79%;
+    padding: 10px 10px;
+    position: relative;
+    bottom: 30px;
+    background-color: #fff;
+}
+.serviceSub {
+    font-size: 17px;
+    color: var(--jet_yellow);
+}
+.serviceCard h4 {
+    font-size: 25px;
+}
+.servicePara {
+    font-size: 14px;
+    margin-top: 7px;
+}
+.service_select {
+    position: absolute;
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    display: flex;
+    justify-content: center;   
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    background-color: var(--jet_yellow);
+    font-size: 10px;
+    top: -7px;
+    right: 10px;
+}
+/* -------------BLOCK SECTION----------------------- */
+.blockDiv {
+    width: 100%;
+    height: 20vh;
+    background-color: #0d2b19;
+}
+/* -----------feedback CSS------------------------ */
+#feedbackSub {
+    text-align: center;
+    color: var(--jet_yellow);
+    font-size: 21px;
+}
+.feedbackDiv h2 {
+    font-size: 50px;
+    color: var(--jet-green);
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+}
+.reviewsDiv {
+   /* border: 2px solid purple; */
+   display: flex;
+   justify-content: space-around;
+   margin-top: 1.5rem;
+}
+.reviewCard {
+    border: 1px solid gray;
+    width: 40%;
+    position: relative;
+    padding: 2rem 1rem 1rem 2rem;
+}
+.reviewCard img {
+    position: absolute;
+    left: -45px;
+    top: 30px;
+}
+.reviwPara {
+    font-size: 18px;
+    text-align: right;
+    color: gray;
+}
+.reviewName {
+    text-align: right;
+    margin-top: 10px;
+}
+.reviewName span {
+    display: block;
+    color: gray;
+}
+/* ----------SPECIAL OFFER--------------------- */
+.specialOfferDiv {
+    display: flex;
+    justify-content: center;
+}
+.spText {
+    width: 50%;
+    background-color: var(--jet_yellow);
+    padding: 1rem 2rem;
+}
+.spImage {
+    width: 50%;
+}
+.spImage img{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+#offer_btn {
+    display: inline-block;
+    width: 280px;
+    height: 80px;
+    border-radius: 30px;
+    background-color: #0d2b19;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+    margin-top: 1rem;
+    transition: all 0.3s ease;
+}
+#offer_btn:hover {
+    background-color: green;
+    transform: scale(1.1);
+}
+.spSub {
+    font-size: 21px;
+    color: #fff;
+}
+.spText h2 {
+    font-size: 50px;
+    color: #fff;
+}
+.spPara {
+    margin-top: 1rem;
+    color: #fff;
+}
+/* --------FLIGHT TIMINGS------------------ */
+.flight_timings {
+    background-image: url("../Images/world-map-drawing-1.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #f8f8f5;
+    background-blend-mode:color-burn;
+}
+.flight_timing_text>.timing_sub {
+    color: var(--jet_yellow);
+    font-size: 21px;
+}
+.flight_timing_text h2 {
+    font-size: 50px;
+}
+.flight_timing_text>.timing_para {
+ font-size: 16px;
+ line-height: 1.5rem;
+ margin-top: 1rem;
+}
+.flight_timing_text h2 span {
+    display: block;
+}
+.flight_timings_Div {
+    display: flex;
+    justify-content: space-around;
+}
+.flight_timing_text {
+    /* border: 2px solid rgb(71, 190, 199); */
+    max-width: 407px;
+    width: 100%;
+}
+.flight_timing_pic {
+    /* border: 2px solid green; */
+    max-width: 366px;
+    width: 100%;
+    padding-bottom: 10px;
+}
+.flight_timing_pic>.pic_head {
+         display: flex;
+         justify-content: space-between;
+         background-color: #ebeae2;
+         padding: 1.5rem 1rem;
+}
+.flight_timing_pic>.pic_body {
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+}
+.flight_timing_pic>.pic_body>img {
+    margin-bottom: 1rem;
+}
+.flight_timing_pic>.pic_body>p {
+    font-size: 14px;
+    margin-top: 10px;
+}
+.flight_timing_pic>.pic_body>.timing_btn {
+    width: 134px;
+    height: 34px;
+    background-color: #0d2b19;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 11px;
+    margin-top: 10px;
+}
+.timing_btn:hover {
+    transform: scale(1.1);
+}
+.timing_selectors {
+    width: 60%;
+    /* border: 2px solid black; */
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: space-around;
+}
+.timing_selectors a {
+    display: inline-block;
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d4cece;
+    color: #000;
+}
+.timing_selectors a:hover {
+    background-color: #0d2b19;
+    color: #fff;
+}
+/* -------DESTINATIONS CSS---------------------- */
+.destinations {
+    background-image: url("../Images/destin_background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.destinations_card_div {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+.destination_card {
+    width: 30%;
+    /* border: 2px solid blue; */
+    position: relative;
+}
+.destination_card:hover {
+    transform: translateY(-10px);
+}
+.destination_card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.destination_name {
+    background-color: #294f38;
+    opacity: 0.9;
+    position: absolute;
+    bottom: 0;
+    padding: 1rem 0;
+    width: 70%;
+    color: #fff;
+    font-size: 13px;
+}
+.destination_name p {
+    text-align: center;
+}
+.destin_time {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6px;
+    padding: 0 5px;
+}
+.destination_div h2 {
+    font-size: 34px;
+    text-align: center;
+    margin-top: 1rem;
+    color: #fff;
+}
+.destination_div h2 span {
+    display: block;
+}
+.destination_sub {
+ text-align: center;
+ font-size: 21px;
+ color: var(--jet_yellow);
+}
+/* ---------NEWS ARTICLES CSS--------------------------- */
+.news_card {
+    /* border: 2px solid orange; */
+    width: 32%;
+    background-color: #fff;
+}
+.news_card_text {
+    background-color: #fff;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+}
+.feb24{
+   width: 100px;
+   height: 30px;
+   background-color: #a79132;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: #fff;
+   border-radius: 30px;
+   font-size: 15px;
+   margin-top: 8px;
+}
+.news_card img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+.news_card_div {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1.5rem;
+}
+.card_comments {
+    font-size: 18px;
+    color: gray;
+}
+.card_comments i {
+    color: #a79132;
+    margin-top: 10px;
+}
+.card_precaution {
+    color: #3f3f3f;
+    font-size: 25px;
+    margin-top: 1rem;
+}
+.card_precaution span{
+  display: block;
+}
+.news_card .read_more {
+    display: block;
+    text-decoration: none;
+    text-align: right;
+    color: gray;
+    margin-top: 14px;
+}
+.newsart_sub {
+    text-align: center;
+    color: #a79132;
+    font-size: 21px;
+}
+.news_articles_div h2 {
+    font-size: 50px;
+    text-align: center;
+    margin-top: 1rem;
+}
+.news_articles_div h2 span {
+    display: block;
+}
+/* ---SUBSCRIBE CSS------------ */
+.subscribe {
+    background-color:var(--jet_yellow);
+    background-image: url("../Images/subscribe_background.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.subscribe_div {
+    display: flex;
+    justify-content: space-between;
+}
+.subscribe_text {
+    /* border: 2px solid orangered; */
+    width: 45%;
+}
+.subscribe_form {
+    /* border: 2px solid purple; */
+    width: 45%;
+    position: relative;
+}
+.subscribe_form form input[type="email"] {
+    width: 90%;
+    height: 70px;
+    background-color: #fff;
+    display: block;
+    border-radius: 30px;
+    color: black;
+    padding-left: 10px;
+}
+.subscribe_form form input[type="submit"] {
+    border-radius: 30px;
+    background-color: #0d2b19;
+    color: #fff;
+    height: 55px;
+    width: 150px;
+    position: absolute;
+    right: 80px;
+    top: 6px;
+}
+.subscribe_form form input[type="checkbox"] {
+ width: 20px;
+ height: 20px;
+ margin-top: 1rem;
+}
+.subscribe_text h2 {
+    color: #fff;
+}
+.subscribe_text h2 span {
+    display: block;
+}
+label {
+    color: #fff;
+    padding-left: 1rem;
+}
+.subscribe_sub {
+   color: #fff;
+  font-size: 21px;
+}
+.subscribe_text h2 {
+    font-size: 50px;
+    color: #fff;
+}
+.subscribe_text h2 span {
+    display: block;
+}
+/* ------FOOTER CSS--------------------------- */
+footer {
+    background-color: var(--jet-green);
+}
+.footerDiv {
+  display: flex;
+  column-gap: 15px;
+}
+.foot_part {
+    /* border: 2px solid yellow; */
+    flex-grow: 1;
+}
+.foot_part ul {
+    list-style: none;
+    margin-top: 12px;
+}
+.foot_part ul li a {
+    text-decoration: none;
+    color: gray;
+}
+.foot_part ul li {
+    margin-top: 8px;
+    color: #808080;
+    font-size: 20px;
+}
+.foot_part ul li i {
+    color: var(--jet_yellow);
+}
+.footer_head {
+    color: #fff;
+    font-size: 25px;
+}
+.foot1 p{
+color: #fff;
+font-size: 25px;
+margin-top: 10px;
+}
+.foot1 p span {
+    display: block;
+}
+.copyright_div {
+    padding: 1rem 0;
+    border-top: 1px solid #000;
+    color: gray;
+    text-align: center;
+    font-size: 21px;
+}
+ /*-----------RESPONSIVE SECTION--------------  */
+ @media screen and (max-width:1399px) {
+    .container {
+        max-width: 1170px;
+    }
+    /* ----------BANNER RESPONSIVE---------- */
+    .featureImage {
+        bottom: -150px;
+    }
+    /* --------ABOUT RESPONSIVE------------- */
+    .aboutText h2 {
+        font-size: 35px;
+        margin-top: 1rem;
+    }
+    #about_btn {
+        width: 200px;
+        height: 60px;
+        font-size: 18px;
+    }
+    .aboutPara {
+        font-size: 16px;
+        margin-top: 14px;
+        line-height: 1.7rem;
+    }
+    .aboutCall {
+        width: 35%;
+    }
+    .aboutp3 {
+        margin-top: 10px;
+        font-size: 18px;
+    }
+    .aboutText {
+        width: 55%;
+    }
+    .aboutImage {
+        width: 40%;
+    }
+    .aboutImage img {
+        width: 100%;
+        height: auto;
+    }
+    .aboutInfo {
+        margin-top: 1rem;
+    }
+    /* -------------CARDS RESPONSIVE------------- */
+    .card {
+       max-width: 330px;
+       min-height: 450px;
+    }
+    /* --------------PRIVATE FLIGHT RESPONSIVE--- */
+    .privateFlightContent form {
+        width: 100%;
+    }
+    /* -----------SERVICES RESPONSIVE-------------- */
+    .serviceCardDiv {
+        justify-content: space-between;
+        margin-top: 0;
+    }
+    .serviceDiv h2 {
+        width: 70%;
+    }
+    .serviceCard {
+        max-width: 100%;
+        /* width: 24%; */
+        margin-top: 3rem;
+    }
+    .serviceCard {
+        flex-grow: 1;
+    }
+    .serviceSub {
+        font-size: 14px;
+    }
+    .serviceText h4 {
+        font-size: 18px;
+    }
+    .servicePara {
+        font-size: 11px;
+    }
+    /* ------CARDS RESPONSIVE----------------------- */
+    .card {
+        min-height: 350px;
+    }
+    #cardHead {
+        font-size: 26px;
+    }
+    #cardPara {
+        font-size: 19px;
+        margin-top: 1rem;
+    }
+    #card_btn {
+        width: 150px;
+        height: 40px;
+        font-size: 15px;
+    }
+    /* ----SPECIAL OFFER RESPONSIVE------------------ */
+    .spText h2 {
+        font-size: 30px;
+    }
+    #offer_btn {
+        width: 200px;
+        height: 60px;
+    }
+    /* --------FLIGHT TIMINGS RESPONSIVE----------------------- */
+    .flight_timing_pic {
+        width: 28%;
+    }
+    .flight_timing_text {
+        width: 32%;
+    }
+    .flight_timing_text h2 {
+        font-size: 30px;
+    }
+    .flight_timing_text>.timing_sub{
+        font-size: 16px;
+    }
+    .flight_timing_pic>.pic_body>img {
+        width: 60%;
+        height: auto;
+        object-fit: cover;
+    }
+    .flight_timing_pic>.pic_head>p {
+        font-size: 14px;
+    }
+    /* ------DESTINATIONS RESPONSIVE------------- */
+    .destination_name {
+        width: 80%;
+        padding: 10px 0;
+        font-size: 12px;
+    }
+    /* ------FOOTER RESPONSIVE */
+    .foot1 p {
+        font-size: 20px;
+    }
+    .footer_head {
+        font-size: 22px;
+    }
+    .foot_part ul li {
+        font-size: 15px;
+    }
+ }
+@media screen and (max-width:1199px) { 
+    .container {
+        max-width: 900px;
+    }
+    /* -------NAVBAR RESPONSIVE--------- */
+    .navbar {
+        top: 0px;
+        left: 0;
+        right: 0;
+    }
+    /* --------------BANNER RESPONSIVE */
+    h1 {
+        font-size: 70px;
+    }
+    .bannerContent {
+        padding-top: 5rem;
+    }
+    .bannerBtn {
+        column-gap: 1rem;
+    }
+    #btn1,#btn2 {
+        flex-grow: 1;
+    }
+    .featureImage {
+        bottom: -120px;
+    }
+    /* ----------CARDS RESPONSIVE------------- */
+    #cardHead {
+        font-size: 24px;
+    }
+    #cardPara {
+        font-size: 16px;
+    }
+    
+    /* -------PRIVATE FLIGHT------------------ */
+    .privateFlightContent h2 {
+        font-size: 30px;
+    }
+    .privateFlightContent form input {
+        height: 50px;
+        max-width: 250px;
+    }
+    .privateFlightContent form select {
+        height: 50px;
+        max-width: 250px;
+    }
+    .privateFlightDiv form input[type="submit"] {
+        width: 150px;
+        height: 50px;
+    }
+    .flightEnd {
+        font-size: 20px;
+    }
+    /* ------service responsive-------------- */
+         .serviceText  {
+           width: 100%;
+         }
+    /* ----------FEEDBACK RESPONSIVE------------------ */
+    .reviewsDiv {
+        flex-wrap: wrap;
+    }
+    .feedbackDiv h2 {
+        font-size: 32px;
+    }
+    .reviewCard img {
+        top: 50px;
+    }
+    .reviewCard {
+        margin-top: 1rem;
+    }
+    /* ----------SPECIAL OFFER RESPONSIVE----------------- */
+    .spText h2{
+        width: 100%;
+        font-size: 24px;
+    }
+    #offer_btn {
+        width: 120px;
+        height: 40px;
+        font-size: 15px;
+    }
+    .spText {
+        padding: 10px 10px;
+    }
+    .spPara {
+        margin-top: 8px;
+        font-size: 16px;
+    }
+    .spSub {
+        font-size: 16px;
+    }
+    /* --------FLIGHT TIMINGS RESPONSIVE------------- */
+    .flight_timings_Div {
+        flex-wrap: wrap;
+    }
+    .flight_timing_pic {
+        order: 1;
+        width: 45%;
+    }
+    .flight_timing_text {
+        order: 2;
+        width: 70%;
+        margin-top: 2rem;
+    }
+    .timing_selectors {
+        margin: 0 auto;
+        margin-top: 1.5rem;
+    }
+    /* ---------DESTINATIONS DIV------------- */
+    .destinations_card_div {
+        margin-top: 1rem;
+    }
+    .destination_name {
+        padding: 5px 0;
+        width: 100%;
+    }
+    .destin_time {
+        margin-top: 5px
+    }
+    /* -------SUBSCRIBE RESPONSIVE------------------- */
+    .subscribe_text h2 {
+        font-size: 40px;
+        margin-top: 10px;
+    }
+    /* --------FOOTER RESPONSIVE--------------- */
+    .foot_part {
+        flex-grow: unset;
+        width: 45%;
+    }
+    .footerDiv{
+        flex-wrap: wrap;
+        justify-content: space-around;
+        column-gap: normal;
+        gap: 1rem;
+    }
+    .footer_logo {
+        width: 40%;
+    }
+    .foot1 p {
+        font-size: 18px;
+    }
+}
+@media screen and (max-width:991px) {
+    .container {
+        max-width: 700px;
+    }
+    /* --------NAVBAR RESPONSIVE------------ */
+    .navList {
+        /* width: 100%; */
+        position: absolute;
+        top: 90px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #a79132; 
+        height: max-content;
+        overflow: hidden;
+    }
+    .navList li {
+        margin-top: 7px;
+    }
+    .navTools {
+        display: none;
+    }
+    .menu_icon {
+        display: block;
+        transition: all 0.3s ease;
+    }
+    .menu_icon:hover {
+        transform: scale(1.1);
+        color: var(--jet_yellow);
+    }
+    /* --------BANNER RESPONSIVE------------- */
+    .featureImage {
+        bottom: -110px;
+    }
+    /* -----------ABOUT RESPONSIVE---------------- */
+    .aboutDiv {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+    .aboutImage {
+        order: -1;
+        width: 50%;
+    }
+    .aboutText {
+        max-width: 100%;
+        width: 80%;
+    }
+    .aboutText h2 {
+        font-size: 30px;
+    }
+    .aboutPara {
+        font-size: 14px;
+    }
+    #about_btn {
+        width: 150px;
+        height: 50px;
+        font-size: 16px;
+    }
+    /* -------CARDS RESPONSIVE----------------- */
+         .card {
+            max-width: 100%;
+            width: 32%;
+            min-height: 300px;
+            padding: 0;
+            padding: 1rem 1rem;
+         }
+         .cardDiv {
+            flex-wrap: wrap;
+            gap: 3rem;
+         }
+         #cardp1 {
+            font-size: 16px;
+         }
+         #cardHead {
+            font-size: 18px;
+            margin-top: 10px;
+         }
+         #cardPara {
+            font-size: 14px;
+            margin-top: 10px;
+         }
+         #card_btn {
+            width: 120px;
+            height: 35px;
+            font-size: 9px;
+            margin-top: 1rem;
+         }
+    /* ---------------SERVICES RESPONSIVE------------------ */
+    .serviceDiv h2 {
+        font-size: 30px;
+        margin-top: 1rem;
+    }
+    .serviceText h4 {
+        font-size: 15px;
+    }
+    .servicePara {
+        font-size: 11px;
+    }
+    .serviceSub {
+        font-size: 10px;
+    }
+    /* ---------------FEEDBACK RESPONSIVE--------------------- */
+    .reviewCard {
+        width: 70%;
+    }
+    /* --------SPECIAL OFFER------------------- */
+    .specialOfferDiv {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    .spImage {
+        order: -1;
+        width: 70%;
+    }
+    .spText {
+        width: 70%;
+    }
+    /* -------NEWS ARTICLES DIV--------------- */
+    .card_precaution {
+        font-size: 18px;
+    }
+    .card_comments {
+        font-size: 14px;
+    }
+    .news_card_text .read_more {
+        font-size: 14px;
+    }
+    .news_articles_div h2 {
+        font-size: 30px;
+        margin-top: 10px;
+    }
+    /* ----------SUBSCRIBE RESPONSIVE----------- */
+    .subscribe_div {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .subscribe_text {
+        width: 90%;
+    }
+    .subscribe_form {
+        width: 90%;
+    }
+}
+@media screen and (max-width: 767px) {
+    .container {
+        max-width: 550px;
+    }
+    /* ------------NavBAR RESPONSIVE-------------- */
+    .logo a img {
+        width: 80%;
+    }
+    /* -----------BANNER RESPONSIVE--------- */
+    .banner {
+        height: 80vh;
+    }
+    h1 {
+        width: 70%;
+        font-size: 50px;
+    }
+    .bannerBtn {
+        max-width: 350px;
+    }
+    #btn1,#btn2 {
+        height: 50px;
+    }
+    .featureImage {
+        bottom: -100px;
+    }
+    .luxuryCard {
+        max-width: 175px;
+        height: auto;
+        font-size: 15px;
+    }
+    .luxuryCard img {
+        width: 30px;
+    }
+    /* --------ABOUT RESPONSIVE------------------ */
+    .aboutp3 {
+        font-size: 14px;
+    }
+    .aboutPara {
+        line-height: 1.4rem;
+        font-size: 12px;
+    }
+    .aboutCall {
+        width: 40%;
+        font-size: 15px;
+    }
+    /* ----------CARDS RESPONSIVE----------------- */
+    .card {
+        width: 45%;
+        min-height: 250px;
+    }
+    /* ---------DESTINATIONS_RESPONSIVE------- */
+    .destination_sub {
+        font-size: 18px;
+    }
+    .destination_div h2 {
+        font-size: 25px;
+        margin-top: 10px;
+    }
+    .destination_name {
+        font-size: 10px;
+    }
+    /* ------SERVICES RESPONSIVE---------------- */
+    .serviceCard {
+        flex-grow: unset;
+        width: 45%;
+    }
+    .serviceCardDiv {
+        flex-wrap: wrap;
+        gap: 2px;
+    }
+    /* -------NEWS ARTICLES RESPONSIVE------------ */
+    .card_precaution {
+        font-size: 14px;
+    }
+    .feb24 {
+        width: 70px;
+        height: 19px;
+        font-size: 10px;
+    }
+    .card_comments {
+        font-size: 12px;
+    }
+    .news_card_text .read_more {
+        font-size: 11px;
+    }
+    /* -----FOOTER RESPONSIVE------------------- */
+    .foot1 p {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 567px) {
+    .common_padding {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .container {
+        max-width: 300px;
+    }
+    /* ------------NAVBAR RESPONSIVE------------- */
+    .menu_icon i {
+        font-size: 25px;
+    }
+    /* ----------BANNER RESPONSIVE------------ */
+    .banner {
+        height: 70vh;
+    }
+    .featureImage {
+        bottom: -40px;
+    }
+    .bannerContent {
+        padding: 0 1rem;
+        padding-top: 2rem;
+    }
+    .bannerSub {
+        font-size: 20px;
+    }
+    h1 {
+        font-size: 40px;
+        width: 85%;
+    }
+    #btn1,#btn2 {
+        width: 100px;
+        height: 40px;
+    }
+    .bannerBtn {
+        max-width: 250px;
+    }
+    .bannerSecond {
+        padding-top: 70px;
+        padding-bottom: 30px;
+    }
+    .luxuryCard {
+        max-width: 100%;
+    }
+    /* -----------ABOUT RESPONSIVE----------------- */
+    .aboutImage {
+        width: 80%;
+    }
+    .aboutInfo {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    .aboutText h2 {
+        font-size: 22px;
+        text-align: center;
+        margin-top: 12px;
+    }
+    .aboutSub {
+        text-align: center;
+        font-size: 18px;
+    }
+    .aboutCall {
+        width: 80%;
+        font-size: 13px;
+    }
+    .aboutp3 {
+        text-align: center;
+        font-size: 12px;
+    }
+    #about_btn {
+        width: 120px;
+        height: 40px;
+        font-size: 14px;
+    }
+    .aboutPara {
+        text-align: center;
+    }
+    /* -------CARDS RESPONSIVE---------------- */
+    .card {
+        width: 80%;
+        min-height: 220px;
+    }
+    .card2 p,.card3 p {
+        font-size: 17px;
+    }
+    #cardHead {
+        font-size: 14px;
+    }
+    .cardDiv {
+        gap: 1rem;
+    }
+    #card_btn {
+        display: block;
+        margin: 0 auto;
+        margin-top: 10px;
+        width: 70px;
+        height: 30px;
+        font-size:8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #cardPara {
+        font-size: 12px;
+        margin-top: 7px;
+    }
+    /* ----------PRIVATE FLIGHT RESPONSIVE------------ */
+    .privateFlightContent {
+        text-align: center;
+    }
+    .privateFlightContent form {
+        justify-content: center;
+        align-items: center;
+    }
+    .privateFlightDiv form input {
+        max-width: 100%;
+        width: 80%;
+    }
+    .privateFlightDiv form .small_input {
+        max-width: 100%;
+        width: 80%;
+    }
+    .flightSub {
+        font-size: 16px;
+    }
+    .privateFlightContent h2 {
+        font-size: 22px;
+    }
+    .privateFlightContent form input {
+        height: 35px;
+    }
+    .privateFlightContent form select {
+        height: 35px;
+    }
+    .flightEnd {
+        font-size: 15px;
+    }
+    .privateFlightContent form input[type="submit"] {
+        width: 90px;
+        height: 40px;
+        font-size: 8px;
+    }
+    /* ----------------SERVICE RESPONSIVE----------------------- */
+    .serviceCard {
+        width: 70%;
+    }
+    .serviceCardDiv {
+        justify-content: center;
+        align-items: center;
+    }
+    .servicePara {
+        margin-top: 5px;
+    }
+    #serviceDivSub {
+           font-size: 20px;
+    }
+    .serviceDiv h2 {
+        width: 100%;
+        font-size: 25px;
+    }
+    /* --------FEEDBACK RESPONSIVE------------------ */
+    #feedbackSub {
+        font-size: 15px;
+    }
+    .feedbackDiv h2 {
+        font-size: 24px;
+        width: 100%;
+    }
+    .reviewsDiv {
+        margin-top: 1rem;
+    }
+    .reviwPara {
+        font-size: 13px;
+        text-align: right;
+    }
+    .reviewCard {
+        padding-left: 2rem;
+    }
+    .reviewName {
+        font-size: 10px;
+    }
+    /* ------SPECIAL OFFER----------------- */
+    .spImage {
+        width: 90%;
+    }
+    .spText {
+        width: 90%;
+    }
+    .spText h2 {
+        font-size: 20px;
+        margin-top: 1rem;
+    }
+    .spPara {
+        font-style: 13px;
+    }
+    /* -----------FLIGHT TIMINGS------------------- */
+    .flight_timing_pic {
+        width: 80%;
+        margin-top: 1rem;
+    }
+    .flight_timing_text {
+        width: 87%;
+    }
+    /* ---------DESTINATIONS RESPONSIVE--------- */
+    .destinations_card_div {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 14px;
+    }
+    .destination_card {
+       width: 80%;
+    }
+    /* ------NEWS ARTICLES RESPONSIVE---------- */
+    .news_card_div {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    .news_card {
+        width: 80%;
+    }
+    .news_articles_div h2 {
+        font-size: 25px;
+    }
+    /* ----------SUBSCRIBE RESPONSIVE-------------- */
+    .subscribe_text h2 {
+        font-size: 25px;
+    }
+    .subscribe_form form input[type="email"] {
+        width: 100%;
+        height: 40px;
+    }
+    .subscribe_form form input[type="submit"] {
+        position: static;
+        margin-top: 1rem;
+        height: 40px;
+    }
+    /* ----------FOOTER RESPONSIVE----------------- */
+    .foot_part {
+        width: 80%;
+    }
+    .foot1 p {
+        font-size: 12px;
+    }
+    .footer_head {
+        font-size: 18px;
+    }
+    .foot_part ul li {
+        font-size: 14px;
+    }
+    .copyright_div {
+        font-size: 15px;
+    }
+}
